@@ -16,7 +16,7 @@
     <bean id="actor2" class="com.stackroute.domain.Actor">
         <constructor-arg index="0" value="Hritik"> </constructor-arg>
         <constructor-arg index="1" value="male"> </constructor-arg>
-        <constructor-arg index="2" value="45"></constructor-arg>
+        <constructor-arg index="2" value="24"></constructor-arg>
 
     </bean>
 
