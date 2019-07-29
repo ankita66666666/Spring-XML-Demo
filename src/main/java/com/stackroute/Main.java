@@ -13,11 +13,11 @@ public class Main {
 
 
 
-        XmlBeanFactory xmlBeanFactory= new XmlBeanFactory ( new ClassPathResource("BeanFile.xml"));
+        XmlBeanFactory xmlBeanFactory= new XmlBeanFactory ( new ClassPathResource("beans.xml"));
         Movie movieFirst= (Movie)xmlBeanFactory.getBean("movie1");
 
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("BeanFile.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         Movie movie=(Movie)applicationContext.getBean("movie2");
 
 
