@@ -17,11 +17,12 @@ public class Main {
 
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
-        Movie movie = (Movie) applicationContext.getBean("movie3");
+
+        ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
+        BeanLifeCycleDemo beanLifeCycleDemo=(BeanLifeCycleDemo) applicationContext.getBean("Lifecycle");
 
 
 //        System.out.println(movieFirst.getActor());
-        System.out.println(movie.getActor());
 
         // BeanDefinitionRegistry beanDefinitionRegistry= new BeanDefinitionReader("BeanFile.xml");
 
